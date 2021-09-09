@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5EB04C26EA3C7300C97429 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04B26EA3C7300C97429 /* Constants.swift */; };
+		9F5EB04E26EA4C0B00C97429 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04D26EA4C0B00C97429 /* DataManager.swift */; };
+		9F5EB05026EA537600C97429 /* HomeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04F26EA537600C97429 /* HomeModeView.swift */; };
+		9F5EB05226EA538F00C97429 /* HomeModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */; };
+		9F5EB05426EA53A900C97429 /* HomeModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB05326EA53A900C97429 /* HomeModeModel.swift */; };
+		9F5EB05826EAB0BF00C97429 /* DatePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB05726EAB0BF00C97429 /* DatePickerHelper.swift */; };
 		9F74823D26EA3551003D0C1D /* WiserRemakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74823C26EA3551003D0C1D /* WiserRemakeApp.swift */; };
 		9F74823F26EA3551003D0C1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74823E26EA3551003D0C1D /* ContentView.swift */; };
 		9F74824126EA3551003D0C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F74824026EA3551003D0C1D /* Assets.xcassets */; };
 		9F74824426EA3551003D0C1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F74824326EA3551003D0C1D /* Preview Assets.xcassets */; };
+		9F74825026EA35DA003D0C1D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74824F26EA35DA003D0C1D /* LoginModel.swift */; };
+		9F74825226EA360A003D0C1D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74825126EA360A003D0C1D /* LoginView.swift */; };
+		9F74825426EA362B003D0C1D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74825326EA362B003D0C1D /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F5EB04B26EA3C7300C97429 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9F5EB04D26EA4C0B00C97429 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9F5EB04F26EA537600C97429 /* HomeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeView.swift; sourceTree = "<group>"; };
+		9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeViewModel.swift; sourceTree = "<group>"; };
+		9F5EB05326EA53A900C97429 /* HomeModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeModel.swift; sourceTree = "<group>"; };
+		9F5EB05726EAB0BF00C97429 /* DatePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerHelper.swift; sourceTree = "<group>"; };
 		9F74823926EA3551003D0C1D /* WiserRemake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiserRemake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F74823C26EA3551003D0C1D /* WiserRemakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiserRemakeApp.swift; sourceTree = "<group>"; };
 		9F74823E26EA3551003D0C1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F74824026EA3551003D0C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F74824326EA3551003D0C1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F74824526EA3551003D0C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F74824F26EA35DA003D0C1D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		9F74825126EA360A003D0C1D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9F74825326EA362B003D0C1D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +70,17 @@
 		9F74823B26EA3551003D0C1D /* WiserRemake */ = {
 			isa = PBXGroup;
 			children = (
+				9F74824C26EA357C003D0C1D /* Models */,
+				9F74824D26EA3581003D0C1D /* Views */,
+				9F74824E26EA3588003D0C1D /* ViewsModels */,
 				9F74823C26EA3551003D0C1D /* WiserRemakeApp.swift */,
 				9F74823E26EA3551003D0C1D /* ContentView.swift */,
 				9F74824026EA3551003D0C1D /* Assets.xcassets */,
 				9F74824526EA3551003D0C1D /* Info.plist */,
 				9F74824226EA3551003D0C1D /* Preview Content */,
+				9F5EB04B26EA3C7300C97429 /* Constants.swift */,
+				9F5EB04D26EA4C0B00C97429 /* DataManager.swift */,
+				9F5EB05726EAB0BF00C97429 /* DatePickerHelper.swift */,
 			);
 			path = WiserRemake;
 			sourceTree = "<group>";
@@ -69,6 +93,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9F74824C26EA357C003D0C1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F74824F26EA35DA003D0C1D /* LoginModel.swift */,
+				9F5EB05326EA53A900C97429 /* HomeModeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F74824D26EA3581003D0C1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F74825126EA360A003D0C1D /* LoginView.swift */,
+				9F5EB04F26EA537600C97429 /* HomeModeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F74824E26EA3588003D0C1D /* ViewsModels */ = {
+			isa = PBXGroup;
+			children = (
+				9F74825326EA362B003D0C1D /* LoginViewModel.swift */,
+				9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */,
+			);
+			path = ViewsModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +130,7 @@
 				9F74823526EA3551003D0C1D /* Sources */,
 				9F74823626EA3551003D0C1D /* Frameworks */,
 				9F74823726EA3551003D0C1D /* Resources */,
+				9F74824B26EA355F003D0C1D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,13 +185,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F74824B26EA355F003D0C1D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F74823526EA3551003D0C1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F74823F26EA3551003D0C1D /* ContentView.swift in Sources */,
+				9F74825026EA35DA003D0C1D /* LoginModel.swift in Sources */,
+				9F74825226EA360A003D0C1D /* LoginView.swift in Sources */,
+				9F5EB04E26EA4C0B00C97429 /* DataManager.swift in Sources */,
+				9F74825426EA362B003D0C1D /* LoginViewModel.swift in Sources */,
+				9F5EB05226EA538F00C97429 /* HomeModeViewModel.swift in Sources */,
 				9F74823D26EA3551003D0C1D /* WiserRemakeApp.swift in Sources */,
+				9F5EB05426EA53A900C97429 /* HomeModeModel.swift in Sources */,
+				9F5EB05826EAB0BF00C97429 /* DatePickerHelper.swift in Sources */,
+				9F5EB05026EA537600C97429 /* HomeModeView.swift in Sources */,
+				9F5EB04C26EA3C7300C97429 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

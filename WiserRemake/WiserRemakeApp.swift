@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct WiserRemakeApp: App {
+    @StateObject var loginVM = LoginViewModel()
+    @StateObject var homeModeVM = HomeModeViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
+                .environmentObject(loginVM)
+                .environmentObject(homeModeVM)
         }
     }
 }
