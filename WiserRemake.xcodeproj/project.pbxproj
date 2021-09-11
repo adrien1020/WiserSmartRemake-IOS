@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9F5EB04C26EA3C7300C97429 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04B26EA3C7300C97429 /* Constants.swift */; };
-		9F5EB04E26EA4C0B00C97429 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04D26EA4C0B00C97429 /* DataManager.swift */; };
 		9F5EB05026EA537600C97429 /* HomeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04F26EA537600C97429 /* HomeModeView.swift */; };
 		9F5EB05226EA538F00C97429 /* HomeModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */; };
 		9F5EB05426EA53A900C97429 /* HomeModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB05326EA53A900C97429 /* HomeModeModel.swift */; };
@@ -20,11 +19,14 @@
 		9F74825026EA35DA003D0C1D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74824F26EA35DA003D0C1D /* LoginModel.swift */; };
 		9F74825226EA360A003D0C1D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74825126EA360A003D0C1D /* LoginView.swift */; };
 		9F74825426EA362B003D0C1D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74825326EA362B003D0C1D /* LoginViewModel.swift */; };
+		9FDA7E5126EAD0DD00E7561D /* AppliancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDA7E5026EAD0DD00E7561D /* AppliancesView.swift */; };
+		9FDA7E5326EAD11600E7561D /* AppliancesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDA7E5226EAD11600E7561D /* AppliancesViewModel.swift */; };
+		9FDA7E5526EAD1C100E7561D /* ApplianceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDA7E5426EAD1C100E7561D /* ApplianceModel.swift */; };
+		9FDA7E5726EAD3BE00E7561D /* CardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDA7E5626EAD3BE00E7561D /* CardHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F5EB04B26EA3C7300C97429 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9F5EB04D26EA4C0B00C97429 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9F5EB04F26EA537600C97429 /* HomeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeView.swift; sourceTree = "<group>"; };
 		9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeViewModel.swift; sourceTree = "<group>"; };
 		9F5EB05326EA53A900C97429 /* HomeModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeModel.swift; sourceTree = "<group>"; };
@@ -38,6 +40,10 @@
 		9F74824F26EA35DA003D0C1D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		9F74825126EA360A003D0C1D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9F74825326EA362B003D0C1D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9FDA7E5026EAD0DD00E7561D /* AppliancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliancesView.swift; sourceTree = "<group>"; };
+		9FDA7E5226EAD11600E7561D /* AppliancesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliancesViewModel.swift; sourceTree = "<group>"; };
+		9FDA7E5426EAD1C100E7561D /* ApplianceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplianceModel.swift; sourceTree = "<group>"; };
+		9FDA7E5626EAD3BE00E7561D /* CardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F3A12B026ECA22500FC398F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F5EB04B26EA3C7300C97429 /* Constants.swift */,
+				9FDA7E5626EAD3BE00E7561D /* CardHelper.swift */,
+				9F5EB05726EAB0BF00C97429 /* DatePickerHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9F74823026EA3551003D0C1D = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +86,7 @@
 		9F74823B26EA3551003D0C1D /* WiserRemake */ = {
 			isa = PBXGroup;
 			children = (
+				9F3A12B026ECA22500FC398F /* Helpers */,
 				9F74824C26EA357C003D0C1D /* Models */,
 				9F74824D26EA3581003D0C1D /* Views */,
 				9F74824E26EA3588003D0C1D /* ViewsModels */,
@@ -78,9 +95,6 @@
 				9F74824026EA3551003D0C1D /* Assets.xcassets */,
 				9F74824526EA3551003D0C1D /* Info.plist */,
 				9F74824226EA3551003D0C1D /* Preview Content */,
-				9F5EB04B26EA3C7300C97429 /* Constants.swift */,
-				9F5EB04D26EA4C0B00C97429 /* DataManager.swift */,
-				9F5EB05726EAB0BF00C97429 /* DatePickerHelper.swift */,
 			);
 			path = WiserRemake;
 			sourceTree = "<group>";
@@ -98,6 +112,7 @@
 			children = (
 				9F74824F26EA35DA003D0C1D /* LoginModel.swift */,
 				9F5EB05326EA53A900C97429 /* HomeModeModel.swift */,
+				9FDA7E5426EAD1C100E7561D /* ApplianceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -107,6 +122,7 @@
 			children = (
 				9F74825126EA360A003D0C1D /* LoginView.swift */,
 				9F5EB04F26EA537600C97429 /* HomeModeView.swift */,
+				9FDA7E5026EAD0DD00E7561D /* AppliancesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +132,7 @@
 			children = (
 				9F74825326EA362B003D0C1D /* LoginViewModel.swift */,
 				9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */,
+				9FDA7E5226EAD11600E7561D /* AppliancesViewModel.swift */,
 			);
 			path = ViewsModels;
 			sourceTree = "<group>";
@@ -213,13 +230,16 @@
 				9F74823F26EA3551003D0C1D /* ContentView.swift in Sources */,
 				9F74825026EA35DA003D0C1D /* LoginModel.swift in Sources */,
 				9F74825226EA360A003D0C1D /* LoginView.swift in Sources */,
-				9F5EB04E26EA4C0B00C97429 /* DataManager.swift in Sources */,
 				9F74825426EA362B003D0C1D /* LoginViewModel.swift in Sources */,
+				9FDA7E5726EAD3BE00E7561D /* CardHelper.swift in Sources */,
 				9F5EB05226EA538F00C97429 /* HomeModeViewModel.swift in Sources */,
+				9FDA7E5326EAD11600E7561D /* AppliancesViewModel.swift in Sources */,
 				9F74823D26EA3551003D0C1D /* WiserRemakeApp.swift in Sources */,
 				9F5EB05426EA53A900C97429 /* HomeModeModel.swift in Sources */,
+				9FDA7E5526EAD1C100E7561D /* ApplianceModel.swift in Sources */,
 				9F5EB05826EAB0BF00C97429 /* DatePickerHelper.swift in Sources */,
 				9F5EB05026EA537600C97429 /* HomeModeView.swift in Sources */,
+				9FDA7E5126EAD0DD00E7561D /* AppliancesView.swift in Sources */,
 				9F5EB04C26EA3C7300C97429 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

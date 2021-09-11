@@ -15,6 +15,7 @@ struct HomeModeView: View {
     @State private var isHoliday = false
     @State private var isSchedule = false
     @State private var isEnergySaver = false
+    @State var change = false
     var body: some View {
         VStack {
             ZStack {
@@ -98,6 +99,14 @@ struct HomeModeView: View {
                         }
                     })
             }
+            NavigationLink(destination: AppliancesView(), isActive: $change) {
+            Button {
+                change = true
+            } label: {
+                Text("nav")
+            }
+
+            }
         }
         .navigationBarHidden(true)
     }
@@ -121,7 +130,7 @@ struct ButtonMode: View {
     var body: some View {
         Button(action: {
             homeModeVM.setHomeMode(ipAdr, auth, sethomeMode: setHomeMode, completionHandler: {
-                DispatchQueue.main.asyncAfter(deadline: .now()+0.3, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
                     homeModeVM.getHomeMode(ipAdr, auth)
                 })
             })
