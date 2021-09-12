@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F3A12BC26ECED3300FC398F /* TempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A12BB26ECED3300FC398F /* TempModel.swift */; };
+		9F3A12BE26ECEE6000FC398F /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A12BD26ECEE6000FC398F /* TempView.swift */; };
+		9F3A12C026ECEE6B00FC398F /* TempViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A12BF26ECEE6B00FC398F /* TempViewModel.swift */; };
 		9F5EB04C26EA3C7300C97429 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04B26EA3C7300C97429 /* Constants.swift */; };
 		9F5EB05026EA537600C97429 /* HomeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB04F26EA537600C97429 /* HomeModeView.swift */; };
 		9F5EB05226EA538F00C97429 /* HomeModeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F3A12BB26ECED3300FC398F /* TempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempModel.swift; sourceTree = "<group>"; };
+		9F3A12BD26ECEE6000FC398F /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
+		9F3A12BF26ECEE6B00FC398F /* TempViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewModel.swift; sourceTree = "<group>"; };
 		9F5EB04B26EA3C7300C97429 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9F5EB04F26EA537600C97429 /* HomeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeView.swift; sourceTree = "<group>"; };
 		9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModeViewModel.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 				9F74824F26EA35DA003D0C1D /* LoginModel.swift */,
 				9F5EB05326EA53A900C97429 /* HomeModeModel.swift */,
 				9FDA7E5426EAD1C100E7561D /* ApplianceModel.swift */,
+				9F3A12BB26ECED3300FC398F /* TempModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 				9F74825126EA360A003D0C1D /* LoginView.swift */,
 				9F5EB04F26EA537600C97429 /* HomeModeView.swift */,
 				9FDA7E5026EAD0DD00E7561D /* AppliancesView.swift */,
+				9F3A12BD26ECEE6000FC398F /* TempView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 				9F74825326EA362B003D0C1D /* LoginViewModel.swift */,
 				9F5EB05126EA538F00C97429 /* HomeModeViewModel.swift */,
 				9FDA7E5226EAD11600E7561D /* AppliancesViewModel.swift */,
+				9F3A12BF26ECEE6B00FC398F /* TempViewModel.swift */,
 			);
 			path = ViewsModels;
 			sourceTree = "<group>";
@@ -233,9 +242,12 @@
 				9F74825426EA362B003D0C1D /* LoginViewModel.swift in Sources */,
 				9FDA7E5726EAD3BE00E7561D /* CardHelper.swift in Sources */,
 				9F5EB05226EA538F00C97429 /* HomeModeViewModel.swift in Sources */,
+				9F3A12BC26ECED3300FC398F /* TempModel.swift in Sources */,
+				9F3A12C026ECEE6B00FC398F /* TempViewModel.swift in Sources */,
 				9FDA7E5326EAD11600E7561D /* AppliancesViewModel.swift in Sources */,
 				9F74823D26EA3551003D0C1D /* WiserRemakeApp.swift in Sources */,
 				9F5EB05426EA53A900C97429 /* HomeModeModel.swift in Sources */,
+				9F3A12BE26ECEE6000FC398F /* TempView.swift in Sources */,
 				9FDA7E5526EAD1C100E7561D /* ApplianceModel.swift in Sources */,
 				9F5EB05826EAB0BF00C97429 /* DatePickerHelper.swift in Sources */,
 				9F5EB05026EA537600C97429 /* HomeModeView.swift in Sources */,

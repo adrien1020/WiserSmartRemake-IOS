@@ -41,8 +41,10 @@ struct AppliancesView: View {
                                                            setApplianceModel: SetApplianceModel(
                                                             applianceState:
                                                                 [SetApplianceModel.ApplianceState(
-                                                                    applianceId: appliancesVM.applianceDetails[index].applianceId,
-                                                                    applianceName: appliancesVM.applianceDetails[index].applianceName,
+                                                                    applianceId:
+                                                                        appliancesVM.applianceDetails[index].applianceId,
+                                                                    applianceName:
+                                                                        appliancesVM.applianceDetails[index].applianceName,
                                                                     state: state)]),
                                                            completionHandler: { value in
                                                             print(value)

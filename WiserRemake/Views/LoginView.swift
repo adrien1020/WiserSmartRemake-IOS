@@ -18,6 +18,7 @@ struct LoginView: View {
                 Image("wiser.logo")
                     .resizable()
                     .frame(width: 200, height: 200, alignment: .center)
+                    .shadow(color: .black.opacity(0.15), radius: 5, x: -5, y: -5)
                 VStack(spacing: 30) {
                     VStack(spacing: 15) {
                         TextField("User", text: $wiserUser)
@@ -27,6 +28,7 @@ struct LoginView: View {
                             .multilineTextAlignment(.center)
                             .background(Color(.secondarySystemBackground))
                             .cornerRadius(20)
+                            .shadow(color: .black.opacity(0.15), radius: 5, x: -5, y: -5)
                         SecureField("Password", text: $wiserPassword)
                             .textCase(.lowercase)
                             .padding()
@@ -34,6 +36,7 @@ struct LoginView: View {
                             .multilineTextAlignment(.center)
                             .background(Color(.secondarySystemBackground))
                             .cornerRadius(20)
+                            .shadow(color: .black.opacity(0.15), radius: 5, x: -5, y: -5)
                     }
                     .padding(.horizontal, 30)
                     NavigationLink(destination: HomeModeView(), isActive: $loginVM.isAuth) {

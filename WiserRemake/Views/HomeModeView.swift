@@ -16,6 +16,12 @@ struct HomeModeView: View {
     @State private var isSchedule = false
     @State private var isEnergySaver = false
     @State var change = false
+    let gradient = LinearGradient(gradient: Gradient(
+                                    colors: [Color("circle.color.1") ,
+                                             Color("circle.color.2"),
+                                             Color("circle.color.3")]),
+                                  startPoint: .bottomTrailing ,
+                                  endPoint: .bottomLeading)
     var body: some View {
         VStack {
             ZStack {
@@ -24,7 +30,7 @@ struct HomeModeView: View {
                     .frame(width: 300, height: 300, alignment: .center)
                 Circle()
                     .fill(Color.white)
-                    .overlay(Circle().stroke(Color.green, lineWidth: 4))
+                    .overlay(Circle().stroke(gradient, lineWidth: 4))
                     .frame(width: 200, height: 200, alignment: .center)
                     .shadow(color: .black.opacity(0.15), radius: 5, x: 5, y: 5)
                     .shadow(color: .black.opacity(0.15), radius: 5, x: -5, y: -5)
@@ -99,7 +105,7 @@ struct HomeModeView: View {
                         }
                     })
             }
-            NavigationLink(destination: AppliancesView(), isActive: $change) {
+            NavigationLink(destination: TempView(), isActive: $change) {
             Button {
                 change = true
             } label: {

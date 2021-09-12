@@ -17,5 +17,6 @@ struct Consts {
         static let setHomeMode = "/rpc/mode/set_home_mode"
         static let getAppliances = "/rpc/loadmanagement/get_appliances"
         static let setAppliances = "/rpc/loadmanagement/set_appliance_state"
+        static let getTemperatures  = "/rpc/hvac/get_all_loc_temp"
     }
 }
