@@ -15,7 +15,6 @@ struct HomeModeView: View {
     @State private var isHoliday = false
     @State private var isSchedule = false
     @State private var isEnergySaver = false
-    @State var change = false
     let gradient = LinearGradient(gradient: Gradient(
                                     colors: [Color("circle.color.1") ,
                                              Color("circle.color.2"),
@@ -104,14 +103,6 @@ struct HomeModeView: View {
                             isEnergySaver.toggle()
                         }
                     })
-            }
-            NavigationLink(destination: TempView(), isActive: $change) {
-            Button {
-                change = true
-            } label: {
-                Text("nav")
-            }
-
             }
         }
         .navigationBarHidden(true)

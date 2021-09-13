@@ -39,7 +39,7 @@ struct LoginView: View {
                             .shadow(color: .black.opacity(0.15), radius: 5, x: -5, y: -5)
                     }
                     .padding(.horizontal, 30)
-                    NavigationLink(destination: HomeModeView(), isActive: $loginVM.isAuth) {
+                    NavigationLink(destination: CustomTabView(), isActive: $loginVM.isAuth) {
                         Button(action: {
                             loginVM.auth(Consts.Url.ipAdress,
                                          wiserUser,

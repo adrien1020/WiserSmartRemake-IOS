@@ -54,11 +54,13 @@ struct AppliancesView: View {
                     }
                 }
             }
+            .padding(.top, 20)
             .onAppear {
                 appliancesVM.getAppliances(Consts.Url.ipAdress, loginVM.auth)
             }
             Spacer()
         }
+        .navigationBarHidden(true)
     }
 }
 

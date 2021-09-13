@@ -33,15 +33,15 @@ struct TempView: View {
                 Circle()
                     .trim(from: 0, to: progress)
                     .stroke(gradient, style: StrokeStyle(lineWidth: 40, lineCap: .butt))
-                    .frame(width: 251, height: 251, alignment: .center)
-                    .rotationEffect(.init(degrees: 140))
+                    .frame(width: 250, height: 250, alignment: .center)
+                    .rotationEffect(.init(degrees: -210))
                 Circle()
                     .fill(Color.white)
                     .frame(width: 40, height: 40)
                     .offset(x: 250/2)
                     .rotationEffect(.init(degrees: angle))
                     .gesture(DragGesture().onChanged(onDrag(value:)))
-                    .rotationEffect(.init(degrees: 140))
+                    .rotationEffect(.init(degrees: -210))
                 VStack(spacing: 10) {
                     if tempVM.isLoad {
                         Text(String(tempVM.tempDetails[0].currentValue)+" °C")
@@ -69,6 +69,7 @@ struct TempView: View {
                 })
             }
         }
+        .navigationBarHidden(true)
         .ignoresSafeArea(.all, edges: .all)
     }
     func onDrag(value: DragGesture.Value) {
