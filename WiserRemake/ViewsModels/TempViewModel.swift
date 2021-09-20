@@ -33,4 +33,28 @@ class TempViewModel: ObservableObject {
         }
         task.resume()
     }
+    func setTemperature(_ ipAdr: String, _ auth: String, _ setTemp: SetTemperaturesModel,
+                        completionHandler: @escaping (Bool) -> Void) {
+        guard let url = URL(string: ipAdr+Consts.EndPoint.setTemperature) else {fatalError("Invalid URL")}
+        print(url)
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("Basic {}".appending(auth), forHTTPHeaderField: "Authorization")
+        do {
+            request.httpBody = try JSONEncoder().encode(setTemp)
+            print(setTemp)
+        } catch {
+            print(error.localizedDescription)
+        }
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            if error == nil {
+                print(data!)
+                completionHandler(true)
+            } else {
+                print("2")
+                print(error!.localizedDescription)
+            }
+        }
+        task.resume()
+    }
 }

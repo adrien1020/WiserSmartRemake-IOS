@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ScheduleView: View {
     var body: some View {
-        Text("Work in progress")
+        ScrollableDayHelper()
             .navigationBarHidden(true)
+        Spacer()
+        Text("Work in progress")
     }
 }
 

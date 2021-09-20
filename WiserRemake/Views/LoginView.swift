@@ -46,7 +46,7 @@ struct LoginView: View {
                                          wiserPassword,
                                          completionHandler: { isAuth in
                                             if isAuth {
-                                                homeModeVM.getHomeMode(loginVM.ipAdress, loginVM.auth)
+                                                print(isAuth)
                                             }
                                          })
                         }, label: {

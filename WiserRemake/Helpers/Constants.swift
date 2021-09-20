@@ -18,5 +18,6 @@ struct Consts {
         static let getAppliances = "/rpc/loadmanagement/get_appliances"
         static let setAppliances = "/rpc/loadmanagement/set_appliance_state"
         static let getTemperatures  = "/rpc/hvac/get_all_loc_temp"
+        static let setTemperature = "/rpc/hvac/set_loc_temp"
     }
 }

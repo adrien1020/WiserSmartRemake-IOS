@@ -16,18 +16,18 @@ struct AppliancesView: View {
         ScrollView {
             VStack(spacing: 10) {
                 if appliancesVM.isLoad {
-                    ForEach(appliancesVM.applianceDetails.indices) { index in
+                    ForEach(appliancesVM.applianceDetails.indices) { ind in
                         VStack {
                             VStack(spacing: 20) {
                                 HStack {
-                                    Text(appliancesVM.applianceDetails[index].applianceName)
+                                    Text(appliancesVM.applianceDetails[ind].applianceName)
                                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                     Spacer()
-                                    Text(String(appliancesVM.applianceDetails[index].powerConsump)+"W")
+                                    Text(String(appliancesVM.applianceDetails[ind].powerConsump)+"W")
                                         .fontWeight(.semibold)
                                 }
                                 Divider()
-                                Toggle("", isOn: $appliancesVM.applianceDetails[index].state)
+                                Toggle("", isOn: $appliancesVM.applianceDetails[ind].state)
                             }
                             .padding(20)
                             .background(Color.white)
@@ -35,16 +35,16 @@ struct AppliancesView: View {
                         }
                         .padding(.horizontal, 15)
                         .shadow(color: .black, radius: 5, x: 0, y: 5)
-                        .onChange(of: appliancesVM.applianceDetails[index].state, perform: { state in
+                        .onChange(of: appliancesVM.applianceDetails[ind].state, perform: { state in
                             DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute: {
                                 appliancesVM.setAppliances(Consts.Url.ipAdress, loginVM.auth,
                                                            setApplianceModel: SetApplianceModel(
                                                             applianceState:
                                                                 [SetApplianceModel.ApplianceState(
                                                                     applianceId:
-                                                                        appliancesVM.applianceDetails[index].applianceId,
+                                                                        appliancesVM.applianceDetails[ind].applianceId,
                                                                     applianceName:
-                                                                        appliancesVM.applianceDetails[index].applianceName,
+                                                                        appliancesVM.applianceDetails[ind].applianceName,
                                                                     state: state)]),
                                                            completionHandler: { value in
                                                             print(value)

@@ -106,6 +106,9 @@ struct HomeModeView: View {
             }
         }
         .navigationBarHidden(true)
+        .onAppear {
+            homeModeVM.getHomeMode(Consts.Url.ipAdress, loginVM.auth)
+        }
     }
 }
 
